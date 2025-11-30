@@ -1,0 +1,54 @@
+.sidebar {
+  width: 200px;
+  background: var(--ubuntu-light-grey);
+  border-right: 1px solid var(--window-border);
+  padding: var(--spacing-md);
+  overflow-y: auto;
+}
+
+.title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.panels {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.panel {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  width: 100%;
+  padding: var(--spacing-md);
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s ease;
+  color: var(--text-primary);
+  font-size: var(--font-size-sm);
+}
+
+.panel:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.panel.active {
+  background: var(--ubuntu-orange);
+  color: var(--text-inverse);
+}
+
+.icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.name {
+  flex: 1;
+}

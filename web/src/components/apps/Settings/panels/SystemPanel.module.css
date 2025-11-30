@@ -1,0 +1,36 @@
+.panel {
+  padding: var(--spacing-xl);
+}
+
+.heading {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  margin: 0 0 var(--spacing-xl) 0;
+}
+
+.infoGrid {
+  display: grid;
+  gap: var(--spacing-lg);
+  max-width: 600px;
+}
+
+.infoItem {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: var(--ubuntu-light-grey);
+  border-radius: var(--radius-sm);
+}
+
+.label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-secondary);
+}
+
+.value {
+  font-size: var(--font-size-sm);
+  color: var(--text-primary);
+}

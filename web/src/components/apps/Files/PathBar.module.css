@@ -1,0 +1,35 @@
+.pathBar {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--ubuntu-light-grey);
+  border-bottom: 1px solid var(--window-border);
+  font-size: var(--font-size-sm);
+  overflow-x: auto;
+}
+
+.breadcrumb {
+  background: transparent;
+  border: none;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  color: var(--text-primary);
+  font-size: var(--font-size-sm);
+  transition: background 0.15s ease;
+  white-space: nowrap;
+}
+
+.breadcrumb:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.breadcrumbWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.separator {
+  color: var(--text-secondary);
+  padding: 0 var(--spacing-xs);
+}

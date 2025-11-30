@@ -1,0 +1,15 @@
+.terminal {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #300A24;
+  color: #FFFFFF;
+  font-family: 'Ubuntu Mono', 'Courier New', monospace;
+  font-size: 14px;
+}
+
+.output {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--spacing-md);
+}

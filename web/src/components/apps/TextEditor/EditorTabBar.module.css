@@ -1,0 +1,94 @@
+.tabBar {
+  display: flex;
+  align-items: center;
+  background: #252526;
+  border-bottom: 1px solid #1E1E1E;
+  padding: 0;
+  gap: 2px;
+}
+
+.tabs {
+  flex: 1;
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: #2D2D30;
+  cursor: pointer;
+  transition: background 0.15s ease;
+  min-width: 120px;
+  max-width: 200px;
+  border-right: 1px solid #1E1E1E;
+}
+
+.tab:hover {
+  background: #323233;
+}
+
+.tab.active {
+  background: #1E1E1E;
+}
+
+.title {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: var(--font-size-sm);
+  color: #CCCCCC;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dirty {
+  color: #FFFFFF;
+  font-size: 12px;
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  color: #CCCCCC;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  opacity: 0.6;
+  transition: all 0.15s ease;
+}
+
+.closeButton:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.newFile {
+  background: transparent;
+  border: none;
+  color: #CCCCCC;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+
+.newFile:hover {
+  background: rgba(255, 255, 255, 0.1);
+}

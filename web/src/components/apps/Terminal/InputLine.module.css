@@ -1,0 +1,25 @@
+.inputLine {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: #300A24;
+  border-top: 1px solid #1A0012;
+}
+
+.prompt {
+  color: #87D37C;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #FFFFFF;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  caret-color: #FFFFFF;
+}

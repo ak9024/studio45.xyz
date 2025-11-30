@@ -21,7 +21,7 @@ const initialState: DesktopState = {
       muted: false,
     },
   },
-  wallpaper: 'default',
+  wallpaper: '#77216F',
 };
 
 export function DesktopProvider({ children }: { children: ReactNode }) {

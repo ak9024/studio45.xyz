@@ -1,0 +1,92 @@
+.window {
+  position: absolute;
+  background: var(--window-bg);
+  border: 1px solid var(--window-border);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  box-shadow: var(--shadow-window);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  user-select: none;
+}
+
+.window.active {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Resize Handles */
+.resizeHandle {
+  position: absolute;
+  z-index: 10;
+}
+
+.resizeHandle.n,
+.resizeHandle.s {
+  left: 0;
+  right: 0;
+  height: 4px;
+  cursor: ns-resize;
+}
+
+.resizeHandle.e,
+.resizeHandle.w {
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  cursor: ew-resize;
+}
+
+.resizeHandle.n {
+  top: -2px;
+}
+
+.resizeHandle.s {
+  bottom: -2px;
+}
+
+.resizeHandle.e {
+  right: -2px;
+}
+
+.resizeHandle.w {
+  left: -2px;
+}
+
+.resizeHandle.ne,
+.resizeHandle.nw,
+.resizeHandle.se,
+.resizeHandle.sw {
+  width: 8px;
+  height: 8px;
+}
+
+.resizeHandle.ne {
+  top: -4px;
+  right: -4px;
+  cursor: nesw-resize;
+}
+
+.resizeHandle.nw {
+  top: -4px;
+  left: -4px;
+  cursor: nwse-resize;
+}
+
+.resizeHandle.se {
+  bottom: -4px;
+  right: -4px;
+  cursor: nwse-resize;
+}
+
+.resizeHandle.sw {
+  bottom: -4px;
+  left: -4px;
+  cursor: nesw-resize;
+}

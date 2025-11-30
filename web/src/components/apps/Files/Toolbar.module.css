@@ -1,0 +1,41 @@
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--window-bg);
+  border-bottom: 1px solid var(--window-border);
+}
+
+.viewToggle {
+  display: flex;
+  gap: 2px;
+  background: var(--ubuntu-light-grey);
+  border-radius: var(--radius-sm);
+  padding: 2px;
+}
+
+.viewButton {
+  background: transparent;
+  border: none;
+  width: 32px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  transition: all 0.15s ease;
+}
+
+.viewButton:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--text-primary);
+}
+
+.viewButton.active {
+  background: var(--window-bg);
+  color: var(--ubuntu-orange);
+  box-shadow: var(--shadow-sm);
+}

@@ -1,0 +1,67 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 100px 200px;
+  gap: var(--spacing-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--ubuntu-light-grey);
+  border-bottom: 1px solid var(--window-border);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+.items {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 100px 200px;
+  gap: var(--spacing-md);
+  padding: var(--spacing-xs) var(--spacing-md);
+  cursor: pointer;
+  transition: background 0.15s ease;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.row:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.row.selected {
+  background: var(--ubuntu-orange-light);
+  color: var(--text-inverse);
+}
+
+.nameColumn {
+  overflow: hidden;
+}
+
+.sizeColumn,
+.modifiedColumn {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+.row.selected .sizeColumn,
+.row.selected .modifiedColumn {
+  color: var(--text-inverse);
+}
+
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--text-muted);
+  font-size: var(--font-size-sm);
+}

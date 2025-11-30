@@ -1,0 +1,30 @@
+.outputArea {
+  font-family: inherit;
+  line-height: 1.5;
+}
+
+.entry {
+  margin-bottom: 4px;
+}
+
+.entry.input {
+  color: #87D37C;
+  font-weight: 500;
+}
+
+.entry.output {
+  color: #FFFFFF;
+}
+
+.entry.error {
+  color: #FF6E67;
+}
+
+.welcome {
+  color: #87D37C;
+  line-height: 1.6;
+}
+
+.welcome p {
+  margin: 0 0 var(--spacing-sm) 0;
+}

@@ -1,0 +1,62 @@
+.fileItem {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.15s ease;
+}
+
+.fileItem.grid {
+  flex-direction: column;
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  text-align: center;
+  gap: var(--spacing-xs);
+}
+
+.fileItem.grid:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.fileItem.grid.selected {
+  background: var(--ubuntu-orange-light);
+  color: var(--text-inverse);
+}
+
+.fileItem.list {
+  flex-direction: row;
+  gap: var(--spacing-sm);
+  padding: 0;
+}
+
+.icon {
+  flex-shrink: 0;
+  color: var(--ubuntu-orange);
+}
+
+.fileItem.grid .icon {
+  width: 48px;
+  height: 48px;
+}
+
+.fileItem.list .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.name {
+  font-size: var(--font-size-sm);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.fileItem.grid .name {
+  word-break: break-word;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 1.3;
+}

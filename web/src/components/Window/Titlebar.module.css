@@ -1,0 +1,131 @@
+.titlebar {
+  height: var(--window-titlebar-height);
+  background: var(--window-title-bg);
+  display: flex;
+  align-items: center;
+  padding: 0 var(--spacing-sm);
+  cursor: move;
+  user-select: none;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  transition: background 0.15s ease;
+}
+
+.titlebar.active {
+  background: var(--window-title-active);
+}
+
+.controls {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-right: var(--spacing-md);
+}
+
+.button {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: filter 0.15s ease;
+}
+
+.button:hover {
+  filter: brightness(0.9);
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.close {
+  background: #FF5F57;
+}
+
+.minimize {
+  background: #FFBD2E;
+}
+
+.maximize {
+  background: #28CA42;
+}
+
+.close::before,
+.minimize::before,
+.maximize::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.titlebar:hover .close::before {
+  opacity: 1;
+  width: 8px;
+  height: 2px;
+  background: #4D0000;
+  transform: translate(-50%, -50%) rotate(45deg);
+  box-shadow: 0 0 0 2px #4D0000;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 100%,
+    0 0,
+    2px 2px,
+    2px calc(100% - 2px),
+    calc(100% - 2px) calc(100% - 2px),
+    calc(100% - 2px) 2px,
+    2px 2px
+  );
+}
+
+.titlebar:hover .close::before,
+.titlebar:hover .close::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 1.5px;
+  background: #4D0000;
+  opacity: 1;
+}
+
+.titlebar:hover .close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.titlebar:hover .close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.titlebar:hover .minimize::before {
+  opacity: 1;
+  width: 8px;
+  height: 1.5px;
+  background: #995700;
+}
+
+.titlebar:hover .maximize::before {
+  opacity: 1;
+  width: 8px;
+  height: 8px;
+  border: 1.5px solid #0A6A00;
+  background: transparent;
+}
+
+.title {
+  flex: 1;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: calc(3 * 16px + 2 * var(--spacing-sm) + var(--spacing-md));
+}

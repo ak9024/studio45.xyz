@@ -1,0 +1,69 @@
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: #252526;
+  border-bottom: 1px solid #1E1E1E;
+}
+
+.button {
+  background: var(--ubuntu-orange);
+  color: var(--text-inverse);
+  border: none;
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  transition: background 0.15s ease;
+}
+
+.button:hover:not(.disabled) {
+  background: var(--ubuntu-orange-dark);
+}
+
+.button.disabled {
+  background: #3E3E42;
+  color: #808080;
+  cursor: not-allowed;
+}
+
+.separator {
+  width: 1px;
+  height: 20px;
+  background: #3E3E42;
+}
+
+.fontSizeControl {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.iconButton {
+  background: transparent;
+  border: 1px solid #3E3E42;
+  color: #CCCCCC;
+  width: 28px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: 11px;
+  transition: all 0.15s ease;
+}
+
+.iconButton:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: #5E5E62;
+}
+
+.fontSize {
+  font-size: var(--font-size-xs);
+  color: #CCCCCC;
+  min-width: 40px;
+  text-align: center;
+}
