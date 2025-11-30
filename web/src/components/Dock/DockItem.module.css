@@ -1,0 +1,58 @@
+.dockItem {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: transparent;
+}
+
+.dockItem:hover {
+  background-color: var(--dock-item-hover);
+  transform: scale(1.1);
+}
+
+.dockItem.active {
+  background-color: var(--dock-item-active);
+}
+
+.dockItem.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 24px;
+  background-color: var(--ubuntu-orange);
+  border-radius: 0 2px 2px 0;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  fill: white;
+}
+
+.tooltip {
+  position: fixed;
+  left: calc(var(--dock-width) + var(--spacing-sm));
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: var(--z-tooltip);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.dockItem:hover .tooltip {
+  opacity: 1;
+}

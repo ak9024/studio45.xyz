@@ -1,0 +1,47 @@
+.topBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--top-bar-height);
+  background-color: var(--top-bar-bg);
+  color: var(--top-bar-text);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--spacing-sm);
+  z-index: var(--z-top-bar);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: var(--font-size-sm);
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.appMenu {
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-weight: var(--font-weight-medium);
+}
+
+.appMenu:hover {
+  background-color: var(--top-bar-hover);
+}

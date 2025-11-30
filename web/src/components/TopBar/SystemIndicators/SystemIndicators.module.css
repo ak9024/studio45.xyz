@@ -1,0 +1,29 @@
+.indicators {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.indicator {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.indicator:hover {
+  background-color: var(--top-bar-hover);
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.label {
+  font-size: var(--font-size-xs);
+}

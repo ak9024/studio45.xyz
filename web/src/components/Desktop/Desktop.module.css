@@ -1,0 +1,40 @@
+.desktop {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-size: cover;
+  background-position: center;
+}
+
+.wallpaper {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: var(--z-desktop);
+}
+
+/* Warn users on small screens */
+@media (max-width: 1024px), (max-height: 600px) {
+  .desktop::before {
+    content: 'For the best experience, please use a larger screen (minimum 1024x600)';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--ubuntu-orange);
+    color: white;
+    padding: var(--spacing-sm);
+    text-align: center;
+    z-index: 999999;
+    font-size: var(--font-size-sm);
+  }
+}
+
+/* Scale down on medium screens */
+@media (max-width: 1280px) {
+  .desktop {
+    font-size: 14px;
+  }
+}
