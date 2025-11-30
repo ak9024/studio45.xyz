@@ -1,5 +1,5 @@
-import { DesktopProvider } from './contexts/DesktopContext';
-import Desktop from './components/Desktop/Desktop';
+import { DesktopProvider } from '@/contexts/DesktopContext';
+import Desktop from '@/components/Desktop/Desktop';
 
 function App() {
   return (

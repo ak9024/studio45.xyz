@@ -1,5 +1,5 @@
-import Clock from './Clock';
-import SystemIndicators from './SystemIndicators/SystemIndicators';
+import Clock from '@/components/TopBar/Clock';
+import SystemIndicators from '@/components/TopBar/SystemIndicators/SystemIndicators';
 import styles from './TopBar.module.css';
 
 function TopBar() {

@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 import type { ReactNode } from 'react';
-import type { DesktopContextType, DesktopState, SystemIndicators } from '../types/application.types';
+import type { DesktopContextType, DesktopState, SystemIndicators } from '@/types/application.types';
 
 const DesktopContext = createContext<DesktopContextType | undefined>(undefined);
 

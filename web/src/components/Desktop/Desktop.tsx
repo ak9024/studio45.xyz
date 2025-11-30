@@ -1,5 +1,5 @@
-import TopBar from '../TopBar/TopBar';
-import Dock from '../Dock/Dock';
+import TopBar from '@/components/TopBar/TopBar';
+import Dock from '@/components/Dock/Dock';
 import styles from './Desktop.module.css';
 
 function Desktop() {

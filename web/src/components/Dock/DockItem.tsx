@@ -1,6 +1,6 @@
 import { useRef } from 'react';
-import type { AppId } from '../../types/application.types';
-import { ICON_PATHS } from '../../utils/constants';
+import type { AppId } from '@/types/application.types';
+import { ICON_PATHS } from '@/utils/constants';
 import styles from './DockItem.module.css';
 
 interface DockItemProps {

@@ -1,4 +1,4 @@
-import { useDesktop } from '../../contexts/DesktopContext';
+import { useDesktop } from '@/contexts/DesktopContext';
 
 function Clock() {
   const { state } = useDesktop();

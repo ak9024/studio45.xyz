@@ -1,4 +1,4 @@
-import type { AppId } from '../types/application.types';
+import type { AppId } from '@/types/application.types';
 
 export interface AppDefinition {
   id: AppId;

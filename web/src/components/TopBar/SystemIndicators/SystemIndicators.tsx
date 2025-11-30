@@ -1,4 +1,4 @@
-import { useDesktop } from '../../../contexts/DesktopContext';
+import { useDesktop } from '@/contexts/DesktopContext';
 import styles from './SystemIndicators.module.css';
 
 function SystemIndicators() {

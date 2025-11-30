@@ -1,6 +1,6 @@
-import { useDesktop } from '../../contexts/DesktopContext';
-import { APPS } from '../../utils/constants';
-import DockItem from './DockItem';
+import { useDesktop } from '@/contexts/DesktopContext';
+import { APPS } from '@/utils/constants';
+import DockItem from '@/components/Dock/DockItem';
 import styles from './Dock.module.css';
 
 interface DockProps {
